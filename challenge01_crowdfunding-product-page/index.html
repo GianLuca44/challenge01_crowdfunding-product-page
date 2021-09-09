@@ -123,17 +123,28 @@
             <div class="custom-container bg-white">
                 <h4>About this project</h4>
                 <p>
-                    The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
-                    to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
-                    your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
-
-                    Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
-                    to allow notepads, pens, and USB sticks to be stored under the stand.
+                    little desctiption
                 </p>
             </div >
 
             <div class="custom-container bg-white">
-                <p>lorem ipsum</p>
+                <div class="wrapper" id="canvaswrapper">
+                    <div class="graph1">
+                        <div class="title_graph"> <h3>Durchschnittliche Impfungen pro Wochentag</h3></div>
+                        <canvas id="myCanvas" width="400" height="300" title="Tooltip">
+                        </canvas>
+                    </div>
+                    <div class="graph2">
+                        <div class="title_graph"><h3>Anzahl Impfungen der letzten 12 Kalenderwochen</h3></div>
+                        <canvas id="myCanvas1" width="400" height="300" title="Tooltip">
+                        </canvas>
+                    </div>
+                    <div class="graph3" >
+                        <div class="title_graph"><h3>Verteilungen der Erst- und Zweitimpfungen pro Monat</h3></div>
+                        <canvas id="myCanvas2" width="400" height="300" title="Tooltip">
+                        </canvas>
+                    </div>
+                    </div>
 
             </div>
             <div class="custom-container bg-white">
@@ -320,6 +331,11 @@ Success modal end
 
 <!-- Custom scripts for this template -->
 <script src="js/clean-blog.min.js"></script>
+<script>
+
+    // let title = "Erst- und Zweitimpfungen"
+    import('./js/impfungen.js').then(mod => mod.start()) 
+</script>
 
 </body>
 
